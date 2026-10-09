@@ -8,6 +8,7 @@ try:
 
     result = (A < B < C)
     print(result)
+
 except ValueError:
     # Обрабатываем ошибку, если пользователь ввел не число
     print("Ошибка! Вы не ввели число.")
