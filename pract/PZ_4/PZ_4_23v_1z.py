@@ -3,8 +3,8 @@
 
 while True:
     try:
-        a = int(input("Введите целое положительное число n: "))
-        if a > 0:
+        n = int(input("Введите целое положительное число n: "))
+        if n > 0:
             break
         print("Число должно быть больше нуля!")
     except ValueError:
@@ -12,8 +12,8 @@ while True:
 
 while True:
     try:
-        b = int(input("Введите целое положительное число k: "))
-        if b > 0:
+        k = int(input("Введите целое положительное число k: "))
+        if k > 0:
             break
         print("Число должно быть больше нуля!")
     except ValueError:
@@ -22,8 +22,8 @@ while True:
 total_sum = 0
 i = 0
 
-while i <= a:
-    total_sum += i ** b
+while i <= n:
+    total_sum += i ** k
     i += 1
 
 print("Результат: ", total_sum)
